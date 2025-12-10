@@ -16,7 +16,7 @@ const StartScreen = ({ onStart, highScore }: StartScreenProps) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center px-6 py-12 max-w-2xl w-full min-h-full">
+      <div className="relative z-10 flex flex-col items-center px-6 pt-8 pb-20 max-w-2xl w-full">
         {/* Title */}
         <div className="mb-6 md:mb-8 text-center">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 mb-2 md:mb-4 animate-pulse-fast">
