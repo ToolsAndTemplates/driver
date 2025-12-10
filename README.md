@@ -8,13 +8,19 @@ An engaging, mobile-friendly car driving game built with Next.js. No login requi
 
 - **Instant Play**: No login or registration needed
 - **Engaging Gameplay**: Dodge obstacles, collect coins, and beat your high score
+- **Power-Ups System**: Shield, Magnet, and Speed Boost power-ups
+- **Particle Effects**: Beautiful visual effects for collisions and collections
+- **Pause Functionality**: Press SPACE or P to pause the game
 - **Progressive Difficulty**: Game speed increases as you progress
+- **Speed Indicator**: Real-time speed display
+- **Car Tilt Animation**: Dynamic car tilting when steering
 - **PWA Support**: Install on your device for offline play
 - **Mobile-First Design**: Optimized for both desktop and mobile devices
 - **Touch Controls**: Intuitive touch controls for mobile devices
-- **Keyboard Controls**: Arrow keys or A/D for desktop
-- **Beautiful UI**: Attractive gradients and smooth animations
+- **Keyboard Controls**: Arrow keys or A/D for desktop, SPACE/P to pause
+- **Beautiful UI**: Attractive gradients, glow effects, and smooth animations
 - **High Score Tracking**: Automatically saves your best score locally
+- **Responsive HUD**: Clean, informative heads-up display
 
 ## 🚀 Getting Started
 
@@ -56,6 +62,7 @@ http://localhost:3000
 
 - **Arrow Left** or **A**: Move car left
 - **Arrow Right** or **D**: Move car right
+- **SPACE** or **P**: Pause/Resume game
 
 ### Mobile Controls
 
@@ -67,6 +74,13 @@ http://localhost:3000
 - 💰 Collect coins for bonus points (+50 points per coin)
 - 🏁 Pass obstacles to increase your score (+10 points per obstacle)
 - ⚡ Game speed increases every 20 obstacles
+
+### Power-Ups
+
+- 🛡 **Shield**: Protects you from one collision (10 seconds)
+- 🧲 **Magnet**: Automatically attracts nearby coins (8 seconds)
+- ⚡ **Boost**: Increases your speed by 50% (5 seconds)
+- Power-ups spawn every 15 seconds
 
 ## 📱 Installing as PWA
 
@@ -131,15 +145,29 @@ self_driving_car/
 ### Difficulty Progression
 
 - Base speed increases every 20 obstacles
-- Maximum speed cap to ensure playability
+- Maximum speed cap of 8x to ensure playability
+- Speed boost multiplies speed by 1.5x when active
 - Obstacle spawn rate: Every 1.5 seconds
 - Coin spawn rate: Every 2 seconds
+- Power-up spawn rate: Every 15 seconds
+
+### Visual Effects
+
+- Particle effects on coin collection (gold particles)
+- Particle effects on collisions (red/cyan particles)
+- Shield visual effect (cyan glow around car)
+- Glow effects on headlights and coins
+- Gradient backgrounds for all elements
+- Shadow effects for depth perception
+- Car tilt animation when steering
+- Rotating coin animation
 
 ### Collision Detection
 
-- Rectangle-based collision for obstacles
+- Rectangle-based collision for obstacles and power-ups
 - Circle-based collision for coins
 - Precise hit boxes for fair gameplay
+- Shield protection from one collision
 
 ## 🔧 Development
 
@@ -163,19 +191,20 @@ npm run lint
 
 ## 📝 Future Enhancements
 
-- [ ] Convert SVG icons to PNG for better compatibility
 - [ ] Add sound effects and background music
-- [ ] Implement multiple car skins
-- [ ] Add power-ups (shield, magnet, etc.)
-- [ ] Create different road environments
+- [ ] Implement multiple car skins/colors
+- [ ] Create different road environments (desert, city, snow)
 - [ ] Add leaderboard (requires backend)
 - [ ] Add achievement system
 - [ ] Implement car customization
+- [ ] Add more power-up types (invincibility, slow-mo, etc.)
+- [ ] Mobile pause button
+- [ ] Power-up timer bars
 
 ## 🐛 Known Issues
 
-- Icons are currently SVG files renamed as PNG (works in most browsers)
-  - For production, convert to actual PNG using: `npm run generate-icons`
+- Icons use SVG format (works in all modern browsers)
+- For production, consider converting SVG to PNG for older browser support
 
 ## 📄 License
 

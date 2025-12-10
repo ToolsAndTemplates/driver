@@ -63,7 +63,7 @@ const StartScreen = ({ onStart, highScore }: StartScreenProps) => {
           <ul className="text-white/90 space-y-2 text-sm md:text-base">
             <li className="flex items-start">
               <span className="text-yellow-400 mr-2">🎮</span>
-              <span><strong>Desktop:</strong> Use Arrow Keys or A/D</span>
+              <span><strong>Desktop:</strong> Arrow Keys or A/D • SPACE to pause</span>
             </li>
             <li className="flex items-start">
               <span className="text-yellow-400 mr-2">📱</span>
@@ -75,11 +75,19 @@ const StartScreen = ({ onStart, highScore }: StartScreenProps) => {
             </li>
             <li className="flex items-start">
               <span className="text-yellow-400 mr-2">💰</span>
-              <span>Collect coins for bonus points</span>
+              <span>Collect coins (+50 pts)</span>
             </li>
             <li className="flex items-start">
-              <span className="text-green-400 mr-2">🏁</span>
-              <span>Drive as far as you can!</span>
+              <span className="text-cyan-400 mr-2">🛡</span>
+              <span><strong>Shield:</strong> Protects from one crash</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-pink-400 mr-2">🧲</span>
+              <span><strong>Magnet:</strong> Attracts nearby coins</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-lime-400 mr-2">⚡</span>
+              <span><strong>Boost:</strong> Increases your speed</span>
             </li>
           </ul>
         </div>
